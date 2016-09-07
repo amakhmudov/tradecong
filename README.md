@@ -1,0 +1,2 @@
+# tradecong
+Trade Conglomerate project
