@@ -1,0 +1,372 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Домашняя страница</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/plugins.css">
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--[if lt IE 9]>
+            <script src="js/vendor/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="container">
+            <div class="header_contacts section-attract b-space">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="hidden-xs">Горячая линия:</span> <i class="fa fa-phone-square"></i> <strong>+998(90) 971-93-65</strong>
+
+                            <div class="header_contacts-reg">
+                                <a href="javascript:void(0)" data-toggle="modal" data-target="#">Регистрация</a>
+                                <a href="javascript:void(0)" data-toggle="modal" data-target="#login-f"><i class="fa fa-sign-in"></i> Вход</a>
+                            </div><!-- End of header_contacts-reg-->
+
+                            <div class="header_contacts-lang">
+                                <a href="javascript:void(0)" id="lang-dropdown" class="dropdown-toggle" data-toggle="dropdown">Русский<i class="fa fa-caret-down"></i></a>
+
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                        <a href="#">English</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Узбекский</a>
+                                    </li>
+                                </ul>
+                            </div><!-- End of header_contacts-lang-->
+                        </div><!-- End of col-->
+                    </div><!-- End of row -->
+                </div><!-- End of container -->
+            </div><!-- End of header-contacts -->
+
+            <div class="header_nav container b-space">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <a href="#" class="logo ir">Trade Conglomerate - Партнер в области поиска заказов и услуг</a>
+                    </div>
+
+                    <div class="header_navigation col-md-8 col-sm-12">
+                        <ul class="header_navigation-links hidden-sm hidden-xs">
+                            <li class="is_active"><a href="#">Каталог Предприятий</a></li>
+                            <li class="has_inner"><a href="#">Каталог Заказов</a><a href="javascript:void(0)" class="toggler-up-down visible-sm visible-xs" data-toggle=".catalog-inner-ul" data-toggle-class="is_active" data-toggle-self=""></a>
+                                <ul class="catalog-inner-ul">
+                                    <li><a href="#">Каталог предприятий</a></li>
+                                    <li><a href="#">Каталог заказов</a></li>
+                                    <li><a href="#">Тендеры</a></li>
+                                    <li><a href="#">Наши услуги</a></li>
+                                    <li><a href="#">О нас</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Тендеры</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">О Нас</a></li>
+                        </ul>
+                    </div>
+                </div><!-- End of row -->
+
+                <a href="javascript:void(0)" class="header_navigation-links-toggle visible-sm visible-xs" data-toggle=".header_navigation-links" data-toggle-class="is_active" data-toggle-self=""><i class="fa fa-3x fa-bars"></i></a>
+            </div><!-- End of header_nav -->
+
+            <div class="main_forms b-space-lg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-box orders-f">
+                                <h2><span class="hidden-sm hidden-xs">Форма заказа</span><span class="toggler-up-down visible-sm visible-xs" data-toggle="#orders-f" data-toggle-class="is_active" data-toggle-self="">Форма заказа</span></h2>
+
+                                <form action="#" id="orders-f" class="hidden-sm hidden-xs">
+                                    <div class="form-group">
+                                        <label for="orders-f-name-service">Название товара / Услуги:</label>
+
+                                        <!-- <input type="text" name="orders-f-name-service" id="orders-f-name-service" class="form-control"> -->
+
+                                        <select multiple="multiple" class="form-control orders-f-name-service" id="orders-f-name-service">
+                                          <optgroup label="В сфере услуг">
+                                            <option value="1">Web design</option>
+                                            <option value="2">Logo design</option>
+                                          </optgroup>
+                                          <optgroup label="В сфере продаж">
+                                            <option value="1">Domain names</option>
+                                            <option value="2">Windows based hosting</option>
+                                            <option value="3">Linux based hosting</option>
+                                            <option value="4">VPS hosting</option>
+                                          </optgroup>
+                                        </select>
+                                    </div><!-- End of form-group -->
+
+                                    <div class="form-group">
+                                        <label for="orders-f-email">Email:</label>
+
+                                        <input type="email" name="orders-f-email" id="orders-f-email" class="form-control">
+                                    </div><!-- End of form-group -->
+
+                                    <div class="form-group">
+                                        <label for="orders-f-phone">Телефон:</label>
+
+                                        <input type="text" name="orders-f-phone" id="orders-f-phone" class="form-control">
+                                    </div><!-- End of form-group -->
+
+                                    <div class="form-group">
+                                        <label for="orders-f-expires">Срок действия:</label>
+
+                                        <div class="input-group">
+                                            <input type="text" name="orders-f-expires" id="orders-f-expires" class="form-control date-picker" data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </span>
+                                        </div><!-- End of input-grooup -->
+                                        <a href="#" class="help-block mb-none">Прикрепить файл</a>
+                                    </div><!-- End of form-group -->
+
+                                    <div class="form-group">
+                                        <label for="orders-f-additional-info">Дополнительные детали:</label>
+
+                                        <textarea name="orders-f-additional-info" id="orders-f-additional-info" cols="5" rows="5" class="form-control"></textarea>
+                                    </div><!-- End of form-group -->
+
+                                    <div class="form-submit-btn">
+                                        <a href="#" class="btn btn-lg btn-primary">Отправить запрос</a>
+                                    </div>
+                                </form>
+                            </div><!-- End of form-box -->
+                        </div><!-- End of col -->
+
+                        <div class="col-md-6">
+                            <div class="form-box registration-f">
+                                <h2><span class="hidden-sm hidden-xs">Регистрация компании</span><span class="toggler-up-down visible-sm visible-xs" data-toggle="#registration-f" data-toggle-class="is_active" data-toggle-self="">Регистрация компании</span></h2>
+
+                                <form action="#" id="registration-f" class="hidden-sm hidden-xs">
+                                    <div class="form-group">
+                                        <label for="registration-f-name-company">Название компании:</label>
+
+                                        <input type="text" name="registration-f-name-company" id="registration-f-name-company" class="form-control">
+                                    </div><!-- End of form-group -->
+
+                                    <div class="form-group">
+                                        <label for="registration-f-email">Email:</label>
+
+                                        <input type="email" name="registration-f-email" id="registration-f-email" class="form-control">
+                                    </div><!-- End of form-group -->
+
+                                    <div class="form-group">
+                                        <label for="registration-f-phone">Телефон:</label>
+
+                                        <input type="text" name="registration-f-phone" id="registration-f-phone" class="form-control">
+                                    </div><!-- End of form-group -->
+
+                                    <div class="form-group">
+                                        <label for="registration-f-address">Физический адрес:</label>
+
+                                        <input type="text" name="registration-f-address" id="registration-f-address" class="form-control">
+                                    </div><!-- End of form-group -->
+
+                                    <div class="form-group">
+                                        <label for="registration-f-address-additional-field">Сфера деятельности:</label>
+
+                                        <select name="registration-f-address-additional-field" id="registration-f-address-additional-field" class="form-control">
+                                            <option value="choose field">Выберите сферу деятельности</option>
+                                            <option value="district">Оптовая торговля</option>
+                                            <option value="street">Розничная торговля</option>
+                                            <option value="street">Услуги</option>
+                                        </select>
+
+                                        <a href="#" class="help-block mb-none">Добавить поле</a>
+                                    </div><!-- End of form-group -->
+
+                                    <div class="form-group">
+                                        <label for="registration-f-products-services">Продукты / Услуги:</label>
+
+                                        <input type="text" name="registration-f-products-services" id="registration-f-products-services" class="form-control">
+                                    </div><!-- End of form-group -->
+
+                                    <div class="form-submit-btn">
+                                        <a href="#" class="btn btn-lg btn-primary">Зарегистрироваться</a>
+                                    </div>
+                                </form>
+                            </div><!-- End of form-box -->
+                        </div><!-- End of col -->
+                    </div><!-- End of row -->
+                </div><!-- End of container -->
+            </div><!-- End of main-forms -->
+
+            <div class="main_ann b-space-lg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Тендеры</h2>
+
+                            <div class="row">
+                                <div class="main_ann-item col-md-12 col-sm-6 col-xs-12">
+                                    <p><span class="label label-default">Бизнес</span><br><span class="date v-space"><i class="fa fa-calendar"></i> 21 Июля 2016 - 06 Сентября 2016</span><br><a href="#" class="fs-bigger">Обслуживание вахтовых поселков и столовой офиса</a><br>ГУП &laquo;Toshkent Xalqaro Aeroporti&raquo;</p>
+                                </div><!-- End of main_ann-item-->
+
+                                <div class="main_ann-item col-md-12 col-sm-6 col-xs-12">
+                                    <p><span class="label label-primary">Строительство</span><br><span class="date v-space"><i class="fa fa-calendar"></i> 21 Июля 2016 - 06 Сентября 2016</span><br><a href="#" class="fs-bigger">Поставка Холодного Асфальта</a><br>ООО &laquo;Лукойл Узбекистан&raquo;</p>
+                                </div><!-- End of main_ann-item-->
+
+                                <div class="main_ann-item col-md-12 col-sm-6 col-xs-12">
+                                    <p><span class="label label-success">Услуги</span><br><span class="date v-space"><i class="fa fa-calendar"></i> 21 Июля 2016 - 06 Сентября 2016</span><br><a href="#" class="fs-bigger">Капитальный ремонт здания</a><br>ООО &laquo;ВТБ Факторинг&raquo;</p>
+                                </div><!-- End of main_ann-item-->
+
+                                <div class="main_ann-item col-md-12 col-sm-6 col-xs-12">
+                                    <p><span class="label label-primary">Строительство</span><br><span class="date v-space"><i class="fa fa-calendar"></i> 21 Июля 2016 - 06 Сентября 2016</span><br><a href="#" class="fs-bigger">Выполнение работ по монтажу инженерных сетей</a><br>РОЦ &laquo;Городская ферма&raquo;</p>
+                                </div><!-- End of main_ann-item-->
+
+                                <div class="main_ann-item col-md-12 col-sm-6 col-xs-12">
+                                    <p><span class="label label-success">Услуги</span><br><span class="date v-space"><i class="fa fa-calendar"></i> 21 Июля 2016 - 06 Сентября 2016</span><br><a href="#" class="fs-bigger">Капитальный ремонт здания</a><br>ООО &laquo;ВТБ Факторинг&raquo;</p>
+                                </div><!-- End of main_ann-item-->
+                            </div><!-- End of row-->
+
+                            <a href="#" class="link-all">Все тендеры</a>
+                        </div><!-- End of col -->
+                    
+                        <div class="col-md-6">
+                            <h2>Новости</h2>
+                    
+                            <div class="main_ann-item media-info">
+                                <img src="img/news-item-img-1.jpg" alt="news img" class="media left" width="120" height="120">
+
+                                <div class="info">
+                                    <p><a href="#" class="fs-bigger">Затирочная машина Raimondi Supertitina</a><br>Шлифовальная машина Raimondi Supertitina является универсальным инструментом для шлифовки бетонных полов, затирки бетонных стяжек, затирки кафельных полов, мойки и полировки полов.<br><span class="date"><i class="fa fa-calendar"></i> 25 Августа 2016</span><br><i class="fa fa-mail-forward"></i> <a href="#">ООО &laquo;Алит Строй Сервис &raquo;</a></p>
+                                </div><!-- End of info-->
+                            </div><!-- End of main_ann-item-->
+
+                            <div class="main_ann-item media-info">
+                                <img src="img/news-item-img-2.jpg" alt="news img" class="media left" width="120" height="120">
+
+                                <div class="info">
+                                    <p><a href="#" class="fs-bigger">10 причин взаимовыгодного сотрудничества с заводом &laquo;Аврора-Нефть&raquo;</a><br>Завод нефтегазового оборудования "Аврора-Нефть" - динамичное предприятие c высоким производственно-технологическим и кадровым потенциалом, а также были проведены работы по повышению эффективности труда и социального обеспечения сотрудников предприятия, что является решающим фактором в повышении труда служащих предприятия в целом.<br><span class="date"><i class="fa fa-calendar"></i> 20 Августа 2016</span><br><i class="fa fa-mail-forward"></i> <a href="#">ООО &laquo;Завод Аврора-Нефть&raquo;</a></p>
+                                </div><!-- End of info-->
+                            </div><!-- End of main_ann-item-->
+
+                            <div class="main_ann-item media-info">
+                                <img src="img/news-item-img-3.jpg" alt="news img" class="media left" width="120" height="120">
+
+                                <div class="info">
+                                    <p><a href="#" class="fs-bigger">Проведено маркетинговое исследование рынка электрических водонагревателей</a><br>Исследовательская компания «Текарт» обновила маркетинговое исследование рынка электрических водонагревателей. Четвертая версия маркетингового анализа содержит актуальные сведения о развитии рынка в 2009—2014 гг. и прогнозы на 2015 и 2016 гг.<br><span class="date"><i class="fa fa-calendar"></i> 20 Августа 2016</span><br><i class="fa fa-mail-forward"></i> <a href="#">ООО &laquo;Research. Techart&raquo;</a></p>
+                                </div><!-- End of info-->
+                            </div><!-- End of main_ann-item-->
+
+                            <a href="#" class="link-all">Все новости</a>
+                        </div><!-- End of col -->
+                    </div><!-- End of row -->
+                </div><!-- End of container -->
+            </div><!-- End of main-ann -->
+
+            <div class="partners section-attract">
+                <div class="container">
+                    <div class="row">
+                        <h2>Наши партнеры</h2>
+
+                        <div class="partners-carousel">
+                            <img src="img/partners-img-1.png" width="165" height="97" alt="partners img">
+                            <img src="img/partners-img-2.png" width="165" height="97" alt="partners img">
+                            <img src="img/partners-img-3.png" width="165" height="97" alt="partners img">
+                            <img src="img/partners-img-4.png" width="165" height="97" alt="partners img">
+                            <img src="img/partners-img-5.png" width="165" height="97" alt="partners img">
+                            <img src="img/partners-img-6.png" width="165" height="97" alt="partners img">
+                            <img src="img/partners-img-1.png" width="165" height="97" alt="partners img">
+                            <img src="img/partners-img-2.png" width="165" height="97" alt="partners img">
+                            <img src="img/partners-img-3.png" width="165" height="97" alt="partners img">
+                            <img src="img/partners-img-4.png" width="165" height="97" alt="partners img">
+                            <img src="img/partners-img-5.png" width="165" height="97" alt="partners img">
+                            <img src="img/partners-img-6.png" width="165" height="97" alt="partners img">
+                        </div><!-- End of partners-carousel-->
+
+                        <div class="partners-carousel-controls"></div>
+                    </div><!-- End of row-->
+                </div><!-- End of container-->
+            </div><!-- End of partners -->
+
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-links col-md-4 col-sm-12">
+                            <ul>
+                                <li><a href="#">О Нас</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">ЧАВО</a></li>
+                                <li><a href="#">Условия пользования</a></li>
+                            </ul>
+                        </div><!-- End of footer-inks -->
+                        
+                        <div class="footer-socials col-md-4 col-sm-12">
+                            <p><span>Следите за нами</span><br>
+                                <a href="#"><i class="fa fa-3x fa-facebook-square"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-twitter-square"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-google-plus-square"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-youtube-square"></i></a>
+                            </p>
+                        </div><!-- End of footer-socials -->
+
+                        <div class="footer-logo col-md-4 col-sm-12">
+                            <a href="#" class="logo ir">Trade Conglomerate - Партнер в области поиска заказов и услуг</a>
+                        </div><!-- End of footer-logo-->
+                    </div><!-- End of row-->
+                </div><!-- End of container-->
+
+                <p class="footer-copyright">&copy;&nbsp;Trade Conglomerate&nbsp;2016. Все права защищены.</p>
+            </div><!-- End of footer -->
+        </div><!-- End of container -->
+
+
+        <script src="js/plugins.js"></script>
+
+
+        <script src="js/main.js"></script>
+
+        <span class="responsive-tablet fs-clear ir"></span>
+        <span class="responsive-phone fs-clear ir"></span>
+
+        <div id="login-f" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content dropdown-modal-dialog">
+                    <div class="dropdown-modal-dialog-title">
+                        <h2>Вход</h2>
+
+                        <a href="javascript:void(0)" class="close-dialog" data-dismiss="modal"><i class="fa fa-2x fa-times"></i></a>
+                    </div><!-- End of title -->
+
+                    <div class="dropdown-modal-dialog-body">
+                        <form class="login-f">
+                          <div class="form-group"><!--.has-error class should be added to display error in this input-->
+                            <label for="login-f-email">E-mail:</label>
+                            <input type="email" name="login-f-email" class="form-control" id="login-f-email">
+                            <!-- <span class="help-block">Email was entered wrong</span> Should be uncommented when error is occured-->
+                          </div>
+
+                          <div class="form-group">
+                            <label for="login-f-password">Пароль:</label>
+                            <input type="password" name="login-f-password" class="form-control" id="login-f-password">
+                          </div>
+
+                          <div class="checkbox">
+                            <label for="login-f-remember">
+                              <input type="checkbox" name="login-f-remember" id="login-f-remember"> Запомнить меня
+                            </label>
+                          </div>
+
+                          <p><a href="#" class="btn btn-primary">Войти</a> <a href="#">Забыли пароль?</a></p>
+
+                          <p>Все еще не зарегистрированы? <a href="#">Регистрация</a></p>
+
+                          <div class="alert alert-danger is_hidden">Логин или пароль были введены не правильно.</div>
+                        </form>
+                    </div><!-- End of body -->
+                </div><!-- End of modal-content -->
+            </div><!-- End of modal-dialog -->
+        </div><!-- End of login-f-modal -->
+    </body>
+</html>
